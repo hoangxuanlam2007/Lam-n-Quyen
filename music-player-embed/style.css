@@ -1,0 +1,155 @@
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16pt;
+  font-weight: 600;
+  color: #fafafa;
+  cursor: default;
+}
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: default;
+  margin-top: 0px;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: white;
+  cursor: default;
+}
+
+.player {
+  height: 300px;
+  width: 400px;
+  background-color: #fafafd;
+  position: absolute;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.player ul {
+  list-style: none;
+}
+.player ul li {
+  display: inline-block;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.75);
+}
+.cover img {
+  height: 300px;
+  width: 400px;
+}
+.info {
+  position: absolute;
+  z-index: 10;
+}
+.info h1 {
+  margin-top: 15px;
+  margin-left: 45px;
+  line-height: 0;
+}
+.info h4 {
+  margin-left: 45px;
+  line-height: 20px;
+  color: #fafafa;
+}
+.info h2 {
+  margin-left: 160px;
+}
+
+.button-items {
+  position: absolute;
+  margin-left: -35px;
+  margin-top: -98px;
+  z-index: 10;
+}
+
+#slider {
+  width: 182px;
+  height: 4px;
+  background: #cacaca;
+  border-radius: 25px;
+}
+#slider div {
+  width: 4px;
+  height: 4px;
+  margin-top: 1px;
+  background: #fafafa;
+  border-radius: 25px;
+}
+
+#timer {
+  color: #fafafa;
+  line-height: 0;
+  font-size: 9pt;
+  float: right;
+  font-family: Arial, Sans-Serif;
+}
+
+.controls {
+  margin-top: 20px;
+}
+.controls svg:nth-child(2) {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#play {
+  padding: 0 3px;
+  width: 70px;
+  height: 70px;
+  enable-background: new 0 0 25 25;
+}
+#play g {
+  stroke: #fafafa;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+}
+#play g path {
+  fill: #fafafa;
+}
+
+#play:hover {
+  cursor: pointer;
+}
+#play:hover g {
+  stroke: #cecece;
+  cursor: pointer;
+}
+#play:hover g path {
+  fill: #cecece;
+  cursor: pointer;
+}
+#pause {
+  color: #fafafa;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  margin-left: -65px;
+  margin-top: 5px;
+}
+#pause rect {
+  fill: #fafafa;
+}
+
+#pause:hover rect {
+  fill: #cecece;
+}
+p {
+  color: #BDBDBD;
+}
