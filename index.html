@@ -92,7 +92,7 @@
                     <div class="container">
                         <ul>
                             <li class="gla_parent"><a href="/">Trang chủ</a></li>
-                            <li class="gla_parent"><a href="/">Bộ sưu tập</a></li>
+                            <li class="gla_parent"><a id="scroll_gallery" href="javascript: scrollGallery();">Bộ sưu tập</a></li>
                             <li class="gla_parent"><a href="/dem-ngay-yeu/">Đếm ngày yêu</a></li>
                         </ul>
                     </div>
@@ -104,7 +104,7 @@
                 <div class="gla_default_menu">
                     <ul>
                         <li class="gla_parent"><a href="/">Trang chủ</a></li>
-                        <li class="gla_parent"><a href="/">Bộ sưu tập</a></li>
+                        <li class="gla_parent"><a id="scroll_gallery" href="javascript: scrollGallery();">Bộ sưu tập</a></li>
                         <li class="gla_parent"><a href="/dem-ngay-yeu/">Đếm ngày yêu</a></li>
                     </ul>
                 </div>
@@ -224,17 +224,17 @@
         <!-- section end -->
         
         <!-- section -->
-        <section class="gla_section gla_image_bck">
-            
+        <section id="gallery" class="gla_section gla_image_bck">
             
             <div class="container text-center">
                 <p><img src="images/animations/flower7.gif" data-bottom-top="@src:images/animations/flower7.gif; opacity:1" class="gla_animated_flower" height="110" alt=""></p>
                 <h2>Bộ Sưu Tập</h2>
-                <p>Andy and Jeska met in university in the Graphic Design program. They both remember each other from orientation, but it wasn’t love at first sight, that’s for sure. Andy remembers Jeska as a ‘snooty art bitch (having been in the visual arts program at the time), and she remembers Andy being an ‘arrogant computer nerd’, boasting his knowledge of Macs over the other students.</p>
+                <p style="margin-bottom: 0;">Mỗi bức ảnh là một câu chuyện của hành trình cảm xúc. Nó như cánh cửa thời gian kết nối những chuyến đi đã qua và thời khắc hiện tại. Mỗi tấm ảnh là một cơ hội để bạn sống lại khoảnh khắc tươi đẹp đã qua thêm nhiều lần nữa. Mỗi bức ảnh như một ký ức nhỏ, làm nên cuốn nhật ký thanh xuân đặc biệt mà bạn là người sở hữu duy nhất. Khi âm thanh "tách" của chiếc máy ảnh vang lên, cảm xúc và hình ảnh được lưu giữ lại là mãi mãi...</p>
+                <p style="text-align: right;"><b>- Giang Tiểu San &bullet; <span><img src="https://static-znews.zingcdn.me/images/logo-zing-home.svg" height="20px"/></span></b>&nbsp;&nbsp;</p>
                 
                 <!-- filters -->
                 <div class="button-group filter-button-group">
-                    <a data-filter="*">Show All</a>
+                    <a data-filter="*">Tất cả</a>
                     <a data-filter=".engagement">Engagement</a>
                     <a data-filter=".ceremony">Ceremony</a>
                 </div>
@@ -477,6 +477,31 @@
 
                     <!-- item -->
                     <div class="gla_partner_box">
+                        <a href="#"><img src="images/what-i-used/jquery.png" height="80" alt=""></a>
+                    </div>
+
+                    <!-- item -->
+                    <div class="gla_partner_box">
+                        <a href="#"><img src="images/what-i-used/momentjs.png" height="80" alt=""></a>
+                    </div>
+
+                    <!-- item -->
+                    <div class="gla_partner_box">
+                        <a href="#"><img src="images/what-i-used/Modernizr.png" height="80" alt=""></a>
+                    </div>
+
+                    <!-- item -->
+                    <div class="gla_partner_box">
+                        <a href="#"><img src="images/what-i-used/owl.png" height="80" alt=""></a>
+                    </div>  
+
+                    <!-- item -->
+                    <div class="gla_partner_box">
+                        <a href="#"><img src="images/what-i-used/stellar.png" height="80" alt=""></a>
+                    </div> 
+    
+                    <!-- item -->
+                    <div class="gla_partner_box">
                         <a href="#"><img src="images/what-i-used/sass.png" height="80" alt=""></a>
                     </div>
 
@@ -492,20 +517,8 @@
 
                     <!-- item -->
                     <div class="gla_partner_box">
-                        <a href="#"><img src="images/partners/bed-bath-beyond-logo.png" height="80" alt=""></a>
+                        <a href="#"><img src="images/what-i-used/andmore.png" height="80" alt=""></a>
                     </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="images/partners/crate.png" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="images/partners/newly.png" height="80" alt=""></a>
-                    </div>  
-
-                
 
                 </div>
                 <!-- icon boxes end -->
@@ -571,6 +584,14 @@
 <!-- Page End -->
 
 <!-- Script -->
+<script>
+    // Lười sửa script.js
+    function scrollGallery(){
+	    $('html,body').animate({
+	    	scrollTop: $("#gallery").offset().top
+	    }, 300, 'linear');
+    }
+</script>
 <script src="js/jquery-1.12.4.min.js"></script> 
 <script src="js/library.js"></script> 
 <script src="js/script.js"></script>

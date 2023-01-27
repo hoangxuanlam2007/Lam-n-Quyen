@@ -26,11 +26,6 @@
 	 	$(this).css('transition-delay', '0.'+randomNumber+'s');
 	 });
 
-	/* Map */
-	$('.gla_map').on("click", function(e){
-		$(this).toggleClass('gla_active_map');
-	});
-
 	/*CountTo*/
 	$('.gla_timer').appear(function() {
         var e = $(this);
@@ -69,17 +64,6 @@
 
 		      src: 'http://www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
 		    },
-		    vimeo: {
-		      index: 'vimeo.com/',
-		      id: '/',
-		      src: 'http://player.vimeo.com/video/%id%?autoplay=1'
-		    },
-		    gmaps: {
-		      index: '//maps.google.',
-		      src: '%id%&output=embed'
-		    }
-
-		    // you may add here more sources
 
 		  },
 
@@ -248,77 +232,7 @@
 	}
 
 	
-	/*Instafeed*/
-	
-	if ($('#instagram-carousel').length>0) {
-		var feed = new Instafeed({
-	      get: 'user',
-	      userId: 4075526338,
-	      accessToken: '4075526338.17dd6bd.0fcd5eb0262e416390ef273090854cc7',
-	      sortBy: 'most-liked',
-	      template: '<div class="gla_bordered_block gla_image_bcked_zoom"><a href="{{link}}" target="_blank"></a><div class="gla_image_over gla_image_bck" data-image="{{image}}"></div><div class="gla_box_content text-center"><div class="gla_bottom_title gla_hidden_title"><p>{{caption}}</p></div></div></div>',
-	      target: 'instagram-carousel',
-	      limit: 9,
-	      resolution: 'standard_resolution',
-	      after: function () {
-	          $('#instagram-carousel').owlCarousel({
-	              items: 3,
-	              responsive : {
-							    0 : {
-							        items:1,
-							    },
-							    768 : {
-							        items:2,
-							    },
-							    980 : {
-							        items:3,
-							    }
-								},
-	              navigation: true,
-	              responsiveRefreshRate: 200,
-	              pagination: true,
-	              autoPlay: 4000,
-	              margin:40,
-	              loop:true,
-	              navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>']
-	          });
-	          /* Section Background */
-						$('.gla_image_bck').each(function(){
-							var image = $(this).attr('data-image');
-							var gradient = $(this).attr('data-gradient');
-							var color = $(this).attr('data-color');
-							var blend = $(this).attr('data-blend');
-							var opacity = $(this).attr('data-opacity');
-							var position = $(this).attr('data-position');
-							var height = $(this).attr('data-height');
-							if (image){
-								$(this).css('background-image', 'url('+image+')');	
-							}
-							if (gradient){
-								$(this).css('background-image', gradient);	
-							}
-							if (color){
-								$(this).css('background-color', color);	
-							}
-							if (blend){
-								$(this).css('background-blend-mode', blend);	
-							}
-							if (position){
-								$(this).css('background-position', position);	
-							}
-							if (opacity){
-								$(this).css('opacity', opacity);	
-							}
-							if (height){
-								$(this).css('height', height);	
-							}
 
-						});
-	      }
-
-	  });
-		feed.run();
-	}
 
 	/*Divider*/
 	$('.gla_divider').each(function(){
@@ -434,11 +348,6 @@
 		}
 	});
 	
-
-	/* Map */
-	$('.gla_map_over').on("click", function(e){
-		$(this).parents('.gla_section').toggleClass('active_map');
-	});
 
 	/* Mobile Menu */
 	$('.gla_top_menu_mobile_link').on("click", function(e){
