@@ -525,7 +525,7 @@
 
 	$(window).load(function(){
 
-	// Page loader - dcm jquery delay() deo work with .css()
+	// Page loader - sadly, jquery delay() didn't work with .css()
         
     $('body').imagesLoaded(function(){
         $(".gla_page_loader div").fadeOut();

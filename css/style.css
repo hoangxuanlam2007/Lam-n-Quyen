@@ -1302,16 +1302,17 @@ nav .container {
 }
 .quotation {
 	text-align: left;
-	max-width: 575px;
+	max-width: 600px;
 	display: block;
-	background-color: #f2f2f2;
+	background-color: #fdfdfd;
 	padding: 10px 20px;
-	border-left: 10px solid #ccc;
+	border-left: 10px solid rgb(240, 240, 240);
 	box-sizing: border-box;
 }
 .quotation_text {
-	line-height: 1.1em;
+	line-height: 1.3em;
 	margin-top: 5px;
+	margin-bottom: 15px;
 }
 .quotation.quoted::before {
 	content: "❝";
@@ -4784,7 +4785,7 @@ footer {
 	}
 	.gla_subtitle {
 		margin-top: -40px;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 	}
 	.gla_port_icons {
 		display: block;
